@@ -7,21 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
+  <header class="navbar navbar-fixed-top navbar-inverse">
     <div class="container">
       <%= link_to "My Recipes", "", class: "btn btn-lg btn-success", id: "logo" %>
       <div class="nav_item">
         <%= link_to "link 1", "", class: "btn btn-default btn-warning" %>
-         <%= link_to "link 2", "", class: "btn btn-default btn-warning" %>
-          <%= link_to "link 3", "", class: "btn btn-default btn-warning" %>
+        <%= link_to "link 2", "", class: "btn btn-default btn-warning" %>
+        <%= link_to "link 3", "", class: "btn btn-default btn-warning" %>
       </div>
     </div>
   </header>
-  <div class="container"
-<%= yield %>
-<div class="footer">
-  <p>&copy; Globetrotters 2016</p>
-</div>
+  <div class="container">
+  <%= yield %>
+  <div class="footer">
+    <p>&copy; Jennifer Anton 2017</p>
   </div>
+  </div>
+  
 </body>
 </html>

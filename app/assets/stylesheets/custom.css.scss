@@ -1,5 +1,16 @@
+$navbar-inverse-bg: #1A0315;
+$navbar-inverse-color: #B82601;
+$btn-warning-bg: #88D317;
+$btn-success-bg: #6E3667;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+/*  deep plum: #1A0315;
+    violet: #6E3667;
+    electric lime: #88D317;
+    shadow: #535353;
+*/
 
 #logo {
   margin-top: 10px;
@@ -32,8 +43,6 @@ body {
 
 .center {
   text-align: center;
-  height: 500px;
-  background-image: url("")
 }
 
 h1, h2, h3, h4 {
@@ -58,5 +67,9 @@ h2 {
 .left {
   text-align: left;
   letter-spacing: .5px;
+}
 
+.footer {
+  margin-top: 25px;
+  border-top: 1px solid #535353 ;
 }
