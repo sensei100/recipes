@@ -43,3 +43,5 @@ Authentication updates:
 5) Like - update to current_user
 6) Before_action :require_user, except: [:show, :index]
 7) Before_action :require_some_user for chefs, only [:edit, :update]
+
+-add Admin functionality
