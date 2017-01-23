@@ -45,3 +45,20 @@ Authentication updates:
 7) Before_action :require_some_user for chefs, only [:edit, :update]
 
 -add Admin functionality
+
+-add Reviews feature:
+-need to create reviews table
+    body type=text
+    reference chef_id
+    reference recipe_id
+-need to build the Review model
+-need to create test for the spec 
+-add validations to the review model
+-build associations, has_many and belongs_to
+-test out associations in Rails console
+-text area on recipe show page to write reviews
+-make routes - new, create, show?
+-authenticated chefs can create reviews, before action require_user
+-associate chef_id and recipe_id when you create review
+-use existing code, if possible, for form.  
+-pagination for reviews
