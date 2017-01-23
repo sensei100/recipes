@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
   def require_user
     if !logged_in?
       flash[:danger] = "You must be looged in to perform that action"
-      redirect_to :backgit 
+      redirect_to recipes_path
     end
   end
   

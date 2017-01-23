@@ -10,6 +10,14 @@
             <% Cuisine.all.each do |cuisine| %>
               <li><%= link_to cuisine.name, cuisine_path(cuisine) %></li>
             <% end %> 
+            <% if logged_in? %>
+            <li class="divider"></li>
+            <li>
+              <%= link_to(new_cuisine_path) do %>
+              New Cuisine
+              <% end %>
+            <% end %>
+            </li>
           </ul>
         </li> 
       </ul>
@@ -22,6 +30,13 @@
             <% Ingredient.all.each do |ingredient| %>
               <li><%= link_to ingredient.name, ingredient_path(ingredient) %></li>
             <% end %> 
+            <% if logged_in? %>
+            <li class="divider"></li>
+            <li>
+              <%= link_to(new_ingredient_path) do %>
+              New Ingredient
+              <% end %>
+            <% end %>
           </ul>
         </li> 
       </ul>

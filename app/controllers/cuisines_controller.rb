@@ -1,4 +1,5 @@
 class CuisinesController < ApplicationController
+  before_action :require_user, except: [:show]
   
   def new
     @cuisine = Cuisine.new
