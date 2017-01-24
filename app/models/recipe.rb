@@ -21,6 +21,10 @@ class Recipe < ActiveRecord::Base
   def thumbs_down_total
     self.likes.where(like: false).size
   end
+  
+  def name=(val)
+    write_attribute(:name, val.titlecase)
+  end
     
   private
     def picture_size

@@ -2,7 +2,7 @@
 	<div class="well col-md-8 col-md-offset-1" 
 			<%= link_to gravatar_for(review.chef, size: 75), chef_path(review.chef) %>
 
-  <p>
+  <p class="review-chef-name">
     <strong><%= review.chef.chefname %></strong> says: <%= review.content %>
   </p>
 

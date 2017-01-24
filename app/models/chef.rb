@@ -9,4 +9,8 @@ class Chef < ActiveRecord::Base
                                     uniqueness: { case_sensitive: false },
                                     format: { with: VALID_EMAIL_REGEX }
   has_secure_password
+  
+  def chefname=(val)
+    write_attribute(:chefname, val.titlecase)
+  end
 end
