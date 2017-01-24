@@ -42,6 +42,9 @@
 </div>
 
 <%= render @recipe.reviews %>
-<%= render "reviews/form" %>
+
+<% if logged_in? %>
+  <%= render "reviews/form" %>
+<% end %>
 
 <h5><%= link_to 'Return to Recipes Listing', recipes_path, class: "btn btn-warning btn-small" %></h5>

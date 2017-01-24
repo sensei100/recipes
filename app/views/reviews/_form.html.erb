@@ -5,7 +5,7 @@
       
       <%= f.text_area :content, rows: 10 %>
   
-      <%= f.submit "Add Review", class: "btn btn-success" %>
+      <%= f.submit(@review.new_record? ? 'Submit Review  ' : 'Update Review', class: "btn btn-success") %>
     <% end %>
   </div>  
 </div> 

@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="well col-md-8 col-md-offset-1" >
+	<div class="well col-md-8 col-md-offset-1" 
 			<%= link_to gravatar_for(review.chef, size: 75), chef_path(review.chef) %>
 
   <p>
@@ -10,8 +10,9 @@
 			<span class="quiet"><small> created: <%= time_ago_in_words(review.created_at) %> ago,</small></span>
 			<span class="quiet"><small> updated: <%= time_ago_in_words(review.updated_at) %> ago</small></span>
 	</p>
-
-     
- 
+	<% if logged_in? and (review.chef == current_user || current_user.admin?) %>
+  	<%= link_to 'Edit', edit_recipe_review_path(@recipe, review), class: "btn btn-small btn-warning"%>
+  	<%= link_to "Delete Review", [@recipe, review], method: :delete, class: "btn btn-small btn-danger", data: {confirm: "Are you sure?" } %>
+	<% end %>
 	</div>
 </div>
