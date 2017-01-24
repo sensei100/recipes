@@ -57,6 +57,7 @@ body {
   background-image: url(asset_path("toast.jpg"));
   background-size: cover;
   margin-top: 15px;
+  min-height: 350px;
 }
 
 h1, h2, h3, h4 {
@@ -131,4 +132,15 @@ span.picture {
 
 .review-chef-name {
   margin-top: 10px;
+}
+
+.review-list {
+  margin-left: 20px;
+}
+
+@media screen and ( max-width : 420px ) {
+  #logo {
+    display: none;
+  }
+  
 }

@@ -25,6 +25,10 @@ class Recipe < ActiveRecord::Base
   def name=(val)
     write_attribute(:name, val.titlecase)
   end
+  
+   def summary=(val)
+    write_attribute(:summary, val.titlecase)
+  end
     
   private
     def picture_size
